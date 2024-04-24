@@ -1,0 +1,41 @@
+﻿<Page x:Class="Practika5_12.AdminPanel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practika5_12"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AdminPanel">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="407*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Name="autor_table" Content="Автор" Grid.Column="0" Click="autor_table_Click"   />
+        <Button Name="books_table" Content="Книги" Grid.Column="1" Click="autor_table_Click"  />
+        <Button Name="Clients_table" Content="Клиенты" Grid.Column="2" Click="autor_table_Click" />
+        <Button Name="employers_table" Content="Работники" Grid.Column="3" Click="autor_table_Click" />
+        <Button Name="Login_parol_table" Content="Роли\пароли"  Grid.Column="4"  Click="autor_table_Click"/>
+        <Button Name="Ordes_detal_table" Content="Деталь заказа" Grid.Column="5"  Click="autor_table_Click" />
+        <Button Name="Orders_table" Content="Заказы" Grid.Column="9"  Click="autor_table_Click" />
+        <Button Name="Post_table" Content="Почта" Grid.Column="6" Click="autor_table_Click" />
+        <Button Name="Sclad_table" Content="Склад" Grid.Column="7" Height="43" VerticalAlignment="Top" Click="autor_table_Click"  />
+        <Button Name="Store_table" Content="Магазин" Grid.Column="8" Click="autor_table_Click" />
+
+        <Frame x:Name="frame_adminpanel" Grid.ColumnSpan="10" Grid.Row="1"/>
+    </Grid>
+</Page>

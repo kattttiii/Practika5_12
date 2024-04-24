@@ -1,0 +1,59 @@
+﻿<Page x:Class="Practika5_12.ClientsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practika5_12"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ClientsPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="590*"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="76*"/>
+            <ColumnDefinition Width="55*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="28*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="43*"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid x:Name="grid_brend" Grid.RowSpan="11" Grid.ColumnSpan="2" DataGridCell.Selected="grid_brend_Selected"/>
+
+        <Label Content="Фамилия" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" />
+        <TextBox Name="Secondname" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" />
+
+        <Label Name="exeptions" Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="3"/>
+
+        <Label Content="Имя" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <TextBox Name="Name" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <Label Content="Отчество" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <TextBox Name="MiddleName" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="3"/>
+
+        <Label Content="Телефон" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <TextBox Name="Phone" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="3"/>
+
+
+
+
+
+        <Button Name="create" Grid.Row="11" Content="Добавить" Click="create_Click" Grid.Column="2"   />
+        <Button x:Name="delate" Content="Удалить" Grid.Column="4" Grid.Row="11" Click="delate_Click"  />
+        <Button x:Name="update" Content="Изменить"  Grid.Row="11" Click="update_Click"  Grid.Column="3"    />
+
+
+    </Grid>
+</Page>
